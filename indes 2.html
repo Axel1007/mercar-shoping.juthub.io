@@ -1,0 +1,611 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<title>mercados</title>
+<meta name="keywords" content="mercados" />
+<meta name="description" content="mercados" />
+<meta name="format-detection" content="telephone=no">
+<link rel="shortcut icon" type="image/ico" href="https://merecdo.shop/favicon.ico">
+<link type="text/css" rel="stylesheet" href="https://merecdo.shop/template/mobile_index/css/style.css?v=1771629039" />
+<link type="text/css" rel="stylesheet" href="https://merecdo.shop/public/plugin/pageloading/style.css" />
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="https://merecdo.shop/public/assets/cool-share/plugin.css" media="all" rel="stylesheet" />
+<script type="text/javascript" src="https://merecdo.shop/public/js/jquery.js"></script>
+    <script type="text/javascript">
+        // ???
+        var langconfig = [];
+        langconfig.hour = "Hora";
+        langconfig.branch = "Minuto";
+        langconfig.second = "Segundo";
+
+        /*var language = localStorage.getItem('language');
+        console.log(language);*/
+    </script>
+<script type="text/javascript" src="https://merecdo.shop/public/js/global.js"></script>
+<script type="text/javascript" src="https://merecdo.shop/public/js/arttpl.js"></script>
+</head>
+<body>
+<div id="page_loading"><span></span></div>
+<script type="text/javascript">
+page_loading();
+</script><style type="text/css">
+	.nav li a span {
+		height: 20px;
+		overflow: hidden;
+	}
+</style>
+<div class="top_box1">
+	<div class="pagetop1">
+		<div class="top_logo"><a href="https://merecdo.shop/"><img src="https://merecdo.shop/attachment/2025-08/2025081219443317562l.jpg"></a></div>
+		<div class="sear" style="margin-right: 0;" onclick="javascript:app_iframe('https://merecdo.shop/index.php?mod=search');">
+			<div class="sear_input_box"><input name="keyword" style="width: 55%;" type="text" class="sear_input" placeholder="Buscar palabras clave" /></div>
+			<div class="sear_tj"><input type="button" value=" "></div>
+			<div class="clear"></div>
+		</div>
+		<div style="position: absolute; right: 35px; top: 8px;">
+		    <select style="height: 30px; border-radius: 3px;" class="switch_language">
+		        
+				<option value="English" >English</option>
+				<option value="Russian" >???????</option>
+				<option value="arabic" >????</option>
+				<option value="español" selected>español</option>
+				<option value="português" >português</option>
+	        </select>
+
+		</div>
+		<div class="cd"><a href="javascript:top_menu();"></a></div>
+		
+<div class="top_tc" id="top_menu">
+	<ul>
+	<li><a href="https://merecdo.shop/"><i class="top_tb1"></i><span>Inicio</span></a></li>
+	<li><a href="https://merecdo.shop/index.php/category"><i class="top_tb2"></i><span>Categoría</span></a></li>
+	<li><a href="https://merecdo.shop/index.php/cart"><i class="top_tb3"></i><span>Carrito</span></a></li>
+	<li><a href="https://merecdo.shop/user.php"><i class="top_tb4"></i><span>Mi</span></a></li>
+	</ul>
+	<div class="clear"></div>
+</div>
+
+	</div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        // ????
+        $('.switch_language').on('change', function () {
+            var language = $(this).val();
+
+            var that = $(this);
+            $.ajax({
+                type: "POST",
+                url: baseUrl=window.location.protocol+"//"+window.location.host+"/index.php/switchlanguage/index",
+                data: {language:language},
+                dataType: "json",
+                success: function(data){
+                    if(data.code==1){
+                        localStorage.setItem('language', language);
+                        location.reload();
+                    }else{
+                        alert(data.msg);
+                    }
+                }
+            });
+        })
+    })
+</script>
+<div class="content" style="margin:47px 0 60px">
+	<div class="swiper-container jdt">
+	    <div class="swiper-wrapper">
+				        <div class="swiper-slide">
+            <a href=""><img data-src="https://merecdo.shop/attachment/2025-05/2025052905283917434n.jpg" class="swiper-lazy"></a>
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+        </div>
+		        <div class="swiper-slide">
+            <a href=""><img data-src="https://merecdo.shop/attachment/2023-07/2023071100114616866r.jpg" class="swiper-lazy"></a>
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+        </div>
+		        <div class="swiper-slide">
+            <a href=""><img data-src="https://merecdo.shop/attachment/2023-07/2023071100121716862a.jpg" class="swiper-lazy"></a>
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+        </div>
+		        <div class="swiper-slide">
+            <a href=""><img data-src="https://merecdo.shop/attachment/2023-07/2023071100124616882r.png" class="swiper-lazy"></a>
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+        </div>
+					    </div>
+	    <!-- ??????? -->
+	    <div class="swiper-pagination"></div>
+	</div>
+	<div class="nav">
+		<ul>
+		<ul>
+		<li><a href="https://merecdo.shop/index.php/category/list"><i class="nav_i1"></i><span>Todos los Productos</span></a></li>
+		<!--<li><a href="https://merecdo.shop/index.php/huodong/zhekou"><i class="nav_i5"></i><span>Descuento por Tiempo Limitado</span></a></li>-->
+	
+		<!--<li><a href="https://merecdo.shop/index.php/huodong/pintuan"><i class="nav_i4"></i><span>Compra Grupal por Tiempo Limitado</span></a></li>-->
+		<!--<li><a href="https://merecdo.shop/index.php/cart"><i class="nav_i8"></i><span>Carrito</span></a></li>-->
+		
+			<li><a href="javascript:;"><i class="nav_i2"></i><span>Reciclaje a alto precio</span></a></li>
+		<li><a href="#"><i class="nav_i9"></i><span>Servicio en línea</span></a></li>
+		<!--#-->
+		<!--<li><a href="#"><i class="nav_i3"></i><span>Descarga de la aplicación</span></a></li>-->
+		</ul>
+		<div class="clear"></div>
+	</div>
+	<div class="index_gg" id="gundong_html">
+		<div class="gg_tt">Aviso</div>
+		<div class="index_gglist gundong_list">
+			<ul>
+						</ul>
+			<a class="new_more" href="https://merecdo.shop/index.php/article/list-1">Más</a>
+		</div>
+	</div>
+			<div class="tuijian_list mat10">
+				<a href="https://merecdo.shop/index.php/product/list-97" title="Deals of the Day">
+			<div class="tuijian_tt"><p></p>Deals of the Day<i class="tj_more"></i></div>
+		</a>
+				<ul>
+				<li>
+			<div class="li_box">
+									<a href="https://merecdo.shop/index.php/product/3481" title="">
+									<div class="prolist_logo">
+												<img src="https://merecdo.shop/template/mobile_index/images/pixel.gif" data-url="https://merecdo.shop/cache/thumb/2026-02/thumb_400x400_2025081608005417515l.png" title="" class="js_imgload" />
+						
+						
+					</div>
+				</a>
+				<div class="prolist_name">
+										<p><a href="https://merecdo.shop/index.php/product/3481" title=""></a></p>
+										<span>$ 150000.000</span>
+				</div>
+			</div>
+		</li>
+				<li>
+			<div class="li_box">
+									<a href="https://merecdo.shop/index.php/product/3480" title="">
+									<div class="prolist_logo">
+												<img src="https://merecdo.shop/template/mobile_index/images/pixel.gif" data-url="https://merecdo.shop/cache/thumb/2026-02/thumb_400x400_2025081607534617534f.png" title="" class="js_imgload" />
+						
+						
+					</div>
+				</a>
+				<div class="prolist_name">
+										<p><a href="https://merecdo.shop/index.php/product/3480" title=""></a></p>
+										<span>$ 88000.000</span>
+				</div>
+			</div>
+		</li>
+				<li>
+			<div class="li_box">
+									<a href="https://merecdo.shop/index.php/product/3479" title="">
+									<div class="prolist_logo">
+												<img src="https://merecdo.shop/template/mobile_index/images/pixel.gif" data-url="https://merecdo.shop/cache/thumb/2026-02/thumb_400x400_2025081607402917580b.png" title="" class="js_imgload" />
+						
+						
+					</div>
+				</a>
+				<div class="prolist_name">
+										<p><a href="https://merecdo.shop/index.php/product/3479" title=""></a></p>
+										<span>$ 54000.000</span>
+				</div>
+			</div>
+		</li>
+				<li>
+			<div class="li_box">
+									<a href="https://merecdo.shop/index.php/product/3478" title="">
+									<div class="prolist_logo">
+												<img src="https://merecdo.shop/template/mobile_index/images/pixel.gif" data-url="https://merecdo.shop/cache/thumb/2026-02/thumb_400x400_2025081607270617567d.png" title="" class="js_imgload" />
+						
+						
+					</div>
+				</a>
+				<div class="prolist_name">
+										<p><a href="https://merecdo.shop/index.php/product/3478" title=""></a></p>
+										<span>$ 31000.000</span>
+				</div>
+			</div>
+		</li>
+				<li>
+			<div class="li_box">
+									<a href="https://merecdo.shop/index.php/product/3471" title="">
+									<div class="prolist_logo">
+												<img src="https://merecdo.shop/template/mobile_index/images/pixel.gif" data-url="https://merecdo.shop/cache/thumb/2026-02/thumb_400x400_2025081607151717580m.png" title="" class="js_imgload" />
+						
+						
+					</div>
+				</a>
+				<div class="prolist_name">
+										<p><a href="https://merecdo.shop/index.php/product/3471" title=""></a></p>
+										<span>$ 58000.000</span>
+				</div>
+			</div>
+		</li>
+				<li>
+			<div class="li_box">
+									<a href="https://merecdo.shop/index.php/product/3427" title="">
+									<div class="prolist_logo">
+												<img src="https://merecdo.shop/template/mobile_index/images/pixel.gif" data-url="https://merecdo.shop/cache/thumb/2026-02/thumb_400x400_2025081603231717531q.jpg" title="" class="js_imgload" />
+						
+						
+					</div>
+				</a>
+				<div class="prolist_name">
+										<p><a href="https://merecdo.shop/index.php/product/3427" title=""></a></p>
+										<span>$ 76000.000</span>
+				</div>
+			</div>
+		</li>
+				<li>
+			<div class="li_box">
+									<a href="https://merecdo.shop/index.php/product/3414" title="">
+									<div class="prolist_logo">
+												<img src="https://merecdo.shop/template/mobile_index/images/pixel.gif" data-url="https://merecdo.shop/cache/thumb/2026-02/thumb_400x400_2025081122054817516n.png" title="" class="js_imgload" />
+						
+						
+					</div>
+				</a>
+				<div class="prolist_name">
+										<p><a href="https://merecdo.shop/index.php/product/3414" title=""></a></p>
+										<span>$ 80000.000</span>
+				</div>
+			</div>
+		</li>
+				<li>
+			<div class="li_box">
+									<a href="https://merecdo.shop/index.php/product/3347" title="">
+									<div class="prolist_logo">
+												<img src="https://merecdo.shop/template/mobile_index/images/pixel.gif" data-url="https://merecdo.shop/cache/thumb/2026-02/thumb_400x400_2025081107301117583y.png" title="" class="js_imgload" />
+						
+						
+					</div>
+				</a>
+				<div class="prolist_name">
+										<p><a href="https://merecdo.shop/index.php/product/3347" title=""></a></p>
+										<span>$ 88000.000</span>
+				</div>
+			</div>
+		</li>
+				</ul>
+		<div class="clear"></div>
+	</div>
+		<div class="tuijian_list mat10">
+				<a href="https://merecdo.shop/index.php/product/list-96" title="New Income">
+			<div class="tuijian_tt"><p></p>New Income<i class="tj_more"></i></div>
+		</a>
+				<ul>
+				<li>
+			<div class="li_box">
+									<a href="https://merecdo.shop/index.php/product/3545" title="">
+									<div class="prolist_logo">
+												<img src="https://merecdo.shop/template/mobile_index/images/pixel.gif" data-url="https://merecdo.shop/cache/thumb/2026-02/thumb_400x400_2025083008160317523x.png" title="" class="js_imgload" />
+						
+						
+					</div>
+				</a>
+				<div class="prolist_name">
+										<p><a href="https://merecdo.shop/index.php/product/3545" title=""></a></p>
+										<span>$ 925500.000</span>
+				</div>
+			</div>
+		</li>
+				<li>
+			<div class="li_box">
+									<a href="https://merecdo.shop/index.php/product/3544" title="">
+									<div class="prolist_logo">
+												<img src="https://merecdo.shop/template/mobile_index/images/pixel.gif" data-url="https://merecdo.shop/cache/thumb/2026-02/thumb_400x400_2025082918183817534j.png" title="" class="js_imgload" />
+						
+						
+					</div>
+				</a>
+				<div class="prolist_name">
+										<p><a href="https://merecdo.shop/index.php/product/3544" title=""></a></p>
+										<span>$ 2900000.000</span>
+				</div>
+			</div>
+		</li>
+				<li>
+			<div class="li_box">
+									<a href="https://merecdo.shop/index.php/product/3543" title="">
+									<div class="prolist_logo">
+												<img src="https://merecdo.shop/template/mobile_index/images/pixel.gif" data-url="https://merecdo.shop/cache/thumb/2026-02/thumb_400x400_2025082908012717535g.png" title="" class="js_imgload" />
+						
+						
+					</div>
+				</a>
+				<div class="prolist_name">
+										<p><a href="https://merecdo.shop/index.php/product/3543" title=""></a></p>
+										<span>$ 94000.000</span>
+				</div>
+			</div>
+		</li>
+				<li>
+			<div class="li_box">
+									<a href="https://merecdo.shop/index.php/product/3542" title="">
+									<div class="prolist_logo">
+												<img src="https://merecdo.shop/template/mobile_index/images/pixel.gif" data-url="https://merecdo.shop/cache/thumb/2026-02/thumb_400x400_2025082907592517595x.png" title="" class="js_imgload" />
+						
+						
+					</div>
+				</a>
+				<div class="prolist_name">
+										<p><a href="https://merecdo.shop/index.php/product/3542" title=""></a></p>
+										<span>$ 76000.000</span>
+				</div>
+			</div>
+		</li>
+				<li>
+			<div class="li_box">
+									<a href="https://merecdo.shop/index.php/product/3539" title="">
+									<div class="prolist_logo">
+												<img src="https://merecdo.shop/template/mobile_index/images/pixel.gif" data-url="https://merecdo.shop/cache/thumb/2026-02/thumb_400x400_2025082817490117510n.png" title="" class="js_imgload" />
+						
+						
+					</div>
+				</a>
+				<div class="prolist_name">
+										<p><a href="https://merecdo.shop/index.php/product/3539" title=""></a></p>
+										<span>$ 300000.000</span>
+				</div>
+			</div>
+		</li>
+				<li>
+			<div class="li_box">
+									<a href="https://merecdo.shop/index.php/product/3537" title="">
+									<div class="prolist_logo">
+												<img src="https://merecdo.shop/template/mobile_index/images/pixel.gif" data-url="https://merecdo.shop/cache/thumb/2026-02/thumb_400x400_2025082712455417569y.png" title="" class="js_imgload" />
+						
+						
+					</div>
+				</a>
+				<div class="prolist_name">
+										<p><a href="https://merecdo.shop/index.php/product/3537" title=""></a></p>
+										<span>$ 1746672.000</span>
+				</div>
+			</div>
+		</li>
+				<li>
+			<div class="li_box">
+									<a href="https://merecdo.shop/index.php/product/3536" title="">
+									<div class="prolist_logo">
+												<img src="https://merecdo.shop/template/mobile_index/images/pixel.gif" data-url="https://merecdo.shop/cache/thumb/2026-02/thumb_400x400_2025082616393117520w.png" title="" class="js_imgload" />
+						
+						
+					</div>
+				</a>
+				<div class="prolist_name">
+										<p><a href="https://merecdo.shop/index.php/product/3536" title=""></a></p>
+										<span>$ 5717970.000</span>
+				</div>
+			</div>
+		</li>
+				<li>
+			<div class="li_box">
+									<a href="https://merecdo.shop/index.php/product/3532" title="">
+									<div class="prolist_logo">
+												<img src="https://merecdo.shop/template/mobile_index/images/pixel.gif" data-url="https://merecdo.shop/cache/thumb/2026-02/thumb_400x400_2025082608422617554h.png" title="" class="js_imgload" />
+						
+						
+					</div>
+				</a>
+				<div class="prolist_name">
+										<p><a href="https://merecdo.shop/index.php/product/3532" title=""></a></p>
+										<span>$ 1874000.000</span>
+				</div>
+			</div>
+		</li>
+				</ul>
+		<div class="clear"></div>
+	</div>
+		<div class="tuijian_list mat10">
+				<a href="https://merecdo.shop/index.php/product/list-95" title="Recommendation">
+			<div class="tuijian_tt"><p></p>Recommendation<i class="tj_more"></i></div>
+		</a>
+				<ul>
+				<li>
+			<div class="li_box">
+									<a href="https://merecdo.shop/index.php/product/3535" title="">
+									<div class="prolist_logo">
+												<img src="https://merecdo.shop/template/mobile_index/images/pixel.gif" data-url="https://merecdo.shop/cache/thumb/2026-02/thumb_400x400_2025082608583117550q.png" title="" class="js_imgload" />
+						
+						
+					</div>
+				</a>
+				<div class="prolist_name">
+										<p><a href="https://merecdo.shop/index.php/product/3535" title=""></a></p>
+										<span>$ 367200.000</span>
+				</div>
+			</div>
+		</li>
+				<li>
+			<div class="li_box">
+									<a href="https://merecdo.shop/index.php/product/3530" title="">
+									<div class="prolist_logo">
+												<img src="https://merecdo.shop/template/mobile_index/images/pixel.gif" data-url="https://merecdo.shop/cache/thumb/2026-02/thumb_400x400_2025082608230117563k.png" title="" class="js_imgload" />
+						
+						
+					</div>
+				</a>
+				<div class="prolist_name">
+										<p><a href="https://merecdo.shop/index.php/product/3530" title=""></a></p>
+										<span>$ 1311000.000</span>
+				</div>
+			</div>
+		</li>
+				<li>
+			<div class="li_box">
+									<a href="https://merecdo.shop/index.php/product/3526" title="">
+									<div class="prolist_logo">
+												<img src="https://merecdo.shop/template/mobile_index/images/pixel.gif" data-url="https://merecdo.shop/cache/thumb/2026-02/thumb_400x400_2025082019084117525k.jpg" title="" class="js_imgload" />
+						
+						
+					</div>
+				</a>
+				<div class="prolist_name">
+										<p><a href="https://merecdo.shop/index.php/product/3526" title=""></a></p>
+										<span>$ 649950.000</span>
+				</div>
+			</div>
+		</li>
+				<li>
+			<div class="li_box">
+									<a href="https://merecdo.shop/index.php/product/3519" title="">
+									<div class="prolist_logo">
+												<img src="https://merecdo.shop/template/mobile_index/images/pixel.gif" data-url="https://merecdo.shop/cache/thumb/2026-02/thumb_400x400_2025082018562517550d.jpg" title="" class="js_imgload" />
+						
+						
+					</div>
+				</a>
+				<div class="prolist_name">
+										<p><a href="https://merecdo.shop/index.php/product/3519" title=""></a></p>
+										<span>$ 742525.000</span>
+				</div>
+			</div>
+		</li>
+				<li>
+			<div class="li_box">
+									<a href="https://merecdo.shop/index.php/product/3516" title="">
+									<div class="prolist_logo">
+												<img src="https://merecdo.shop/template/mobile_index/images/pixel.gif" data-url="https://merecdo.shop/cache/thumb/2026-02/thumb_400x400_2025081916052017537j.png" title="" class="js_imgload" />
+						
+						
+					</div>
+				</a>
+				<div class="prolist_name">
+										<p><a href="https://merecdo.shop/index.php/product/3516" title=""></a></p>
+										<span>$ 1532000.000</span>
+				</div>
+			</div>
+		</li>
+				<li>
+			<div class="li_box">
+									<a href="https://merecdo.shop/index.php/product/3514" title="">
+									<div class="prolist_logo">
+												<img src="https://merecdo.shop/template/mobile_index/images/pixel.gif" data-url="https://merecdo.shop/cache/thumb/2026-02/thumb_400x400_2025081914025917534a.jpg" title="" class="js_imgload" />
+						
+						
+					</div>
+				</a>
+				<div class="prolist_name">
+										<p><a href="https://merecdo.shop/index.php/product/3514" title=""></a></p>
+										<span>$ 759000.000</span>
+				</div>
+			</div>
+		</li>
+				<li>
+			<div class="li_box">
+									<a href="https://merecdo.shop/index.php/product/3510" title="">
+									<div class="prolist_logo">
+												<img src="https://merecdo.shop/template/mobile_index/images/pixel.gif" data-url="https://merecdo.shop/cache/thumb/2026-02/thumb_400x400_2025081809211717589x.png" title="" class="js_imgload" />
+						
+						
+					</div>
+				</a>
+				<div class="prolist_name">
+										<p><a href="https://merecdo.shop/index.php/product/3510" title=""></a></p>
+										<span>$ 3425500.000</span>
+				</div>
+			</div>
+		</li>
+				<li>
+			<div class="li_box">
+									<a href="https://merecdo.shop/index.php/product/3509" title="">
+									<div class="prolist_logo">
+												<img src="https://merecdo.shop/template/mobile_index/images/pixel.gif" data-url="https://merecdo.shop/cache/thumb/2026-02/thumb_400x400_2025081713044817557e.png" title="" class="js_imgload" />
+						
+						
+					</div>
+				</a>
+				<div class="prolist_name">
+										<p><a href="https://merecdo.shop/index.php/product/3509" title=""></a></p>
+										<span>$ 1737205.000</span>
+				</div>
+			</div>
+		</li>
+				</ul>
+		<div class="clear"></div>
+	</div>
+	</div>
+<link type="text/css" rel="stylesheet" href="https://merecdo.shop/public/plugin/swiper/swiper.min.css" />
+<script type="text/javascript" src="https://merecdo.shop/public/plugin/swiper/swiper.jquery.min.js"></script>
+<script type="text/javascript" src="https://merecdo.shop/public/js/jquery.SuperSlide.js"></script>
+<script type="text/javascript" src="https://merecdo.shop/public/js/wxsdk.js?v=1771629039"></script>
+<script type="text/javascript" src="https://merecdo.shop/public/js/wxapi.js?v=1771629039"></script>
+<script type="text/javascript">
+$(function(){
+	//var jdt_height = $(".content").width()/1.33;
+	//$(".jdt, .jdt img").height(jdt_height);
+	//?????
+	var swiper = new Swiper('.swiper-container', {
+	    pagination: '.swiper-pagination',
+	    paginationClickable: true,
+	    // Disable preloading of all images
+	    preloadImages: false,
+	    // Enable lazy loading
+	    lazyLoading: true,
+	    initialSlide : 0,
+	    autoplay : 2500
+	});
+	pe_jstime(".huodong_time", '1771629039', 'html');
+})
+//????
+$("#gundong_html").slide({
+	mainCell:".gundong_list ul",
+	effect:"topLoop",
+	vis:1,
+	delayTime:1000,
+	interTime:3000,
+	autoPage:true,
+	autoPlay:true
+});
+wx.config({"debug":false,"appId":"","timestamp":1771629040,"nonceStr":"eb9a12d2a43a407528ca14051d66c458","signature":"74aff9079d9fe861745c4e57b3d57d5376b6a802","jsApiList":["updateAppMessageShareData","updateTimelineShareData"]});
+wx.ready(function(){
+	wx_share({
+		name: "mercados",
+		desc: "mercados",
+		url: "https://merecdo.shop/index.php?u=",
+		img: "https://merecdo.shop/attachment/2025-08/2025081219443317574p.jpg"
+	})
+})
+</script>
+<style type="text/css">
+.sear{margin:0 60px 0 50px;}
+</style>
+
+<div class="foot_nav">
+	<ul>
+	<li><a href="https://merecdo.shop/" class="sel"><i class="foot_i1"></i><span>Inicio</span></a></li>
+	<li><a href="https://merecdo.shop/index.php/category"><i class="foot_i2"></i><span>Categoría</span></a></li>
+	<li><a href="https://merecdo.shop/index.php/cart"><i class="foot_i5"></i><span>Carrito</span></a></li>
+	<li><a href="https://merecdo.shop/user.php?mod=order"><i class="foot_i3"></i><span>Orden</span></a></li>
+	<li><a href="https://merecdo.shop/user.php"><i class="foot_i4"></i><span>Mi</span></a></li>
+	</ul>
+	<div class="clear"></div>
+</div>
+<link rel="stylesheet" href="https://merecdo.shop/public/plugin/jqweui/weui.min.css">
+<link rel="stylesheet" href="https://merecdo.shop/public/plugin/jqweui/jquery-weui.min.css">
+<script src="https://merecdo.shop/public/plugin/jqweui/jquery-weui.js"></script>
+<script type="text/javascript" src="https://merecdo.shop/public/plugin/layer_mobile/layer.js"></script>
+<script type="text/javascript" src="https://merecdo.shop/public/js/app.js"></script>
+<script type="text/javascript" src="https://merecdo.shop/public/js/jquery.scrollLoading.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("img.js_imgload").scrollLoading();
+});
+//??????
+function top_menu() {
+	if ($("#top_menu").is(":hidden")) {
+		$("#top_menu").show();
+	}
+	else {
+		$("#top_menu").hide();	
+	}
+	$("#top_menu a").live("click", function(){
+		$("#top_menu").hide();
+	})
+}
+pe_loadscript("https://merecdo.shop/api.php?mod=cron");
+</script>
+
+</body>
+</html>
