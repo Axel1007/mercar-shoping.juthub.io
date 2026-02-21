@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Mercado Libre</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 40px;
+        }
+        .registro {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .registro h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .formulario {
+            display: flex;
+            flex-direction: column;
+        }
+        .formulario label {
+            margin-top: 15px;
+        }
+        .formulario input {
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .formulario button {
+            margin-top: 25px;
+            padding: 15px;
+            background-color: #FF6F00;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="registro">
+        <h2>Registrate en Mercado Libre</h2>
+        <form class="formulario" action="redireccion" method="POST">
+            <label for="nombre">Nombre de Usuario:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="contrasena">Contrasena:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+
+            <label for="telefono">Numero de Telefono:</label>
+            <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10,15}">
+
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+</body>
+</html>
